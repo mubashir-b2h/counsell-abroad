@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Counsel Abroad — B2B Student Counseling</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="hero.css">
+ 
+
+<style>
+/* Reset */
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Montserrat', sans-serif; }
+body { background:#f0f2f5; color:#0c1f2f; line-height:1.5; }
+
+/* Hero */
+
+  <!-- Hero Section -->
+<div class="hero">
+    <div class="hero-overlay"></div> <!-- optional overlay for better text visibility -->
+    <div class="hero-content">
+        <h1>Welcome to Our Website</h1>
+        <p>Counsel Abroad is Offering Best Commission for B2B Partners</p>
+        <a href="#about" class="hero-button">Learn More</a>
+    </div>
+</div>
+
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:#fff;
+  background: url('https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+}
+
+.hero::after {
+  content:'';
+  position:absolute;
+  top:0; left:0; width:100%; height:100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.hero h1, .hero p, .hero .cta-buttons { position: relative; z-index:1; }
+
+.hero h1 {
+  font-size:3rem;
+  margin-bottom:15px;
+  text-shadow: 0 0 20px #00f0a0;
+}
+
+.hero p { font-size:1.2rem; margin-bottom:25px; }
+
+/* CTA Buttons */
+.hero .cta-buttons { display:flex; gap:15px; flex-wrap:wrap; justify-content:center; }
+.hero .cta-buttons a {
+  padding:12px 25px;
+  font-weight:700;
+  border-radius:50px;
+  text-decoration:none;
+  color:#fff;
+  background: linear-gradient(45deg,#00f0a0,#14b8a6,#ff9900);
+  box-shadow:0 0 15px rgba(0,240,160,0.5);
+  transition:0.3s;
+}
+.hero .cta-buttons a:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow:0 0 25px rgba(0,240,160,0.7);
+}
+
+/* Cards Section */
+.cards {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+  padding:60px 20px;
+}
+
+.card {
+  background:#fff;
+  border-radius:16px;
+  padding:25px;
+  width:280px;
+  text-align:center;
+  color:#0c1f2f;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+.card h3 { margin-bottom:12px; color:#00f0a0; }
+.card p { font-size:0.95rem; }
+.card:hover { transform:translateY(-6px); box-shadow:0 12px 25px rgba(0,240,160,0.3); }
+
+/* Apply Form */
+.apply-form input, .apply-form textarea {
+  width:100%;
+  padding:10px 12px;
+  border-radius:8px;
+  border:1px solid #ccc;
+  margin-bottom:12px;
+  font-size:1rem;
+}
+
+.apply-form button {
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:50px;
+  font-weight:700;
+  background:linear-gradient(45deg,#00f0a0,#14b8a6,#ff9900);
+  color:#fff;
+  cursor:pointer;
+  font-size:1rem;
+}
+
+.apply-form button:hover {
+  transform: scale(1.03);
+  box-shadow:0 0 15px rgba(0,240,160,0.5);
+}
+
+/* Footer */
+footer { text-align:center; padding:30px 20px; font-size:0.95rem; background:#06131b; color:#fff; }
+footer a { color:#00f0a0; text-decoration:none; font-weight:600; }
+footer a:hover { text-decoration:underline; }
+
+/* Responsive */
+@media(max-width:768px) {
+  .hero h1 { font-size:2rem; }
+  .hero p { font-size:1rem; }
+  .cards { flex-direction:column; align-items:center; }
+}
+</style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero">
+  <h1>Counsel Abroad 🌏</h1>
+  <p>Earn commissions 💰 by connecting students with top universities globally</p>
+  <div class="cta-buttons">
+    <a href="https://wa.me/1234567890" target="_blank">WhatsApp</a>
+    <a href="https://www.instagram.com/direct/inbox/" target="_blank">DM on Instagram</a>
+    <a href="#apply-form">Apply Now</a>
+  </div>
+</section>
+
+<!-- Cards Section -->
+<section class="cards">
+  <div class="card">
+    <h3>For Agents & Counselors</h3>
+    <p>Earn commission for each student successfully enrolled abroad. Flexible & fully supported.</p>
+  </div>
+  <div class="card">
+    <h3>For Schools & Local Offices</h3>
+    <p>Partner with us to send your students abroad and earn incentives with minimal effort.</p>
+  </div>
+  <div class="card">
+    <h3>For Universities</h3>
+    <p>Get direct student profiles and expand your global enrollment network ethically.</p>
+  </div>
+</section>
+
+<!-- Apply Form -->
+<section class="cards" id="apply-form">
+  <div class="card">
+    <h3>Join & Partner</h3>
+    <form class="apply-form" action="https://example.com/submit" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <input type="text" name="organization" placeholder="Agency / School / University Name" required>
+      <textarea name="message" rows="4" placeholder="How many students you can guide (optional)"></textarea>
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2026 Counsel Abroad. All rights reserved.</p>
+  <p><a href="#top">↑ Back to Top</a></p>
+</footer>
+
+</body>
+</html>
