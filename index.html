@@ -6,73 +6,76 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-/* ===== BASE ===== */
+/* ===== GLOBAL RESET ===== */
 * { box-sizing: border-box; }
 body {
     margin: 0;
     font-family: "Inter", "Segoe UI", Arial, sans-serif;
-    color: #1f2933;
+    color: #1f2937;
     background: #ffffff;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 a { text-decoration: none; color: inherit; }
-h1, h2, h3 { margin: 0 0 15px; font-weight: 600; }
+h1, h2, h3 { margin: 0 0 16px; font-weight: 600; }
 
 /* ===== HEADER ===== */
 header {
-    background: #071a2c;
-    color: #ffffff;
-    padding: 15px 30px;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
 }
 .nav {
-    max-width: 1200px;
+    max-width: 1250px;
     margin: auto;
+    padding: 18px 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .logo {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
-    letter-spacing: 0.5px;
+    color: #0b3c5d;
+    letter-spacing: 0.4px;
 }
 .nav a {
-    margin-left: 25px;
+    margin-left: 30px;
     font-size: 14px;
-    color: #dbe4ee;
+    color: #374151;
 }
 
 /* ===== HERO ===== */
 .hero {
     background:
-        linear-gradient(rgba(7, 26, 44, 0.75), rgba(7, 26, 44, 0.75)),
+        linear-gradient(rgba(6, 18, 33, 0.75), rgba(6, 18, 33, 0.75)),
         url("your-image.jpg") center/cover no-repeat;
-    color: #ffffff;
-    padding: 110px 20px;
+    padding: 140px 20px;
     text-align: center;
+    color: #ffffff;
 }
 .hero h1 {
-    font-size: 42px;
+    font-size: 46px;
     max-width: 900px;
     margin: auto;
+    letter-spacing: -0.3px;
 }
 .hero p {
-    font-size: 18px;
+    font-size: 19px;
     max-width: 720px;
-    margin: 20px auto 35px;
+    margin: 22px auto 40px;
+    opacity: 0.95;
 }
 
 /* ===== BUTTONS ===== */
 .btn {
     display: inline-block;
-    padding: 14px 32px;
+    padding: 15px 36px;
     margin: 6px;
-    border-radius: 4px;
-    font-weight: 600;
+    border-radius: 6px;
     font-size: 15px;
+    font-weight: 600;
 }
 .btn-primary {
-    background: #f4b41a;
+    background: #c9a227;
     color: #000;
 }
 .btn-outline {
@@ -82,38 +85,48 @@ header {
 
 /* ===== SECTIONS ===== */
 section {
-    max-width: 1100px;
+    max-width: 1150px;
     margin: auto;
-    padding: 70px 20px;
+    padding: 90px 25px;
 }
 .section-soft {
-    background: #f5f7fa;
+    background: #f9fafb;
 }
 .section-title {
+    font-size: 28px;
     color: #0b3c5d;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
 }
 
-/* ===== GRID / BOX ===== */
+/* ===== GRID / CARDS ===== */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 28px;
 }
-.box {
+.card {
     background: #ffffff;
-    padding: 28px;
-    border-radius: 6px;
-    border: 1px solid #e5e9f0;
+    padding: 36px 30px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
 }
 
-/* ===== TESTIMONIALS ===== */
+/* ===== LISTS ===== */
+ul, ol {
+    padding-left: 20px;
+}
+li {
+    margin-bottom: 10px;
+}
+
+/* ===== TESTIMONIAL ===== */
 .testimonial {
     font-style: italic;
+    color: #374151;
 }
 .testimonial span {
     display: block;
-    margin-top: 10px;
+    margin-top: 14px;
     font-style: normal;
     font-weight: 600;
     color: #0b3c5d;
@@ -121,45 +134,47 @@ section {
 
 /* ===== FORM ===== */
 form {
-    max-width: 520px;
+    max-width: 540px;
 }
 input, select {
     width: 100%;
-    padding: 13px;
-    margin-bottom: 16px;
-    border: 1px solid #ccd3dd;
-    border-radius: 4px;
+    padding: 14px;
+    margin-bottom: 18px;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+    font-size: 15px;
 }
 button {
     width: 100%;
-    padding: 14px;
+    padding: 16px;
     background: #0b3c5d;
     color: #ffffff;
     border: none;
+    border-radius: 6px;
     font-size: 16px;
-    border-radius: 4px;
+    font-weight: 600;
     cursor: pointer;
 }
 
 /* ===== FOOTER ===== */
 footer {
-    background: #071a2c;
-    color: #cfd8e3;
+    background: #0b3c5d;
+    color: #d1d5db;
     text-align: center;
-    padding: 30px 20px;
+    padding: 45px 20px;
 }
 
 /* ===== WHATSAPP ===== */
 .whatsapp {
     position: fixed;
-    bottom: 22px;
-    right: 22px;
+    right: 24px;
+    bottom: 24px;
     background: #25d366;
     color: #ffffff;
-    padding: 14px 20px;
+    padding: 15px 22px;
     border-radius: 50px;
-    font-weight: 600;
     font-size: 14px;
+    font-weight: 600;
 }
 </style>
 </head>
@@ -173,7 +188,7 @@ footer {
         <div>
             <a href="#about">About</a>
             <a href="#partners">Partners</a>
-            <a href="#how">How It Works</a>
+            <a href="#how">Process</a>
             <a href="#form">Register</a>
         </div>
     </div>
@@ -181,10 +196,11 @@ footer {
 
 <!-- HERO -->
 <div class="hero">
-    <h1>Referral Partner Program for Study Abroad Admissions</h1>
+    <h1>Strategic Referral Partnerships for Study Abroad Admissions</h1>
     <p>
-        Partner with Counsell Abroad to convert student leads into successful
-        international admissions — with transparent commission and professional handling.
+        Counsell Abroad collaborates with agents, institutions, and individuals
+        to deliver ethical international admissions with transparent commission
+        and long-term partnership value.
     </p>
     <a href="#form" class="btn btn-primary">Become a Referral Partner</a>
     <a href="https://wa.me/923XXXXXXXXX" class="btn btn-outline">WhatsApp Us</a>
@@ -194,20 +210,20 @@ footer {
 <section id="about">
     <h2 class="section-title">About Counsell Abroad</h2>
     <p>
-        Counsell Abroad is a Lahore-based student counselling company providing
-        ethical and professional guidance for international education. We work
-        closely with trusted global institutions and value long-term partnerships.
+        Counsell Abroad is a Lahore-based student counselling firm focused on
+        quality-driven international education guidance. Our operations are
+        built on transparency, professionalism, and sustainable partnerships.
     </p>
 </section>
 
-<!-- WHO -->
+<!-- PARTNERS -->
 <section id="partners" class="section-soft">
     <h2 class="section-title">Who Can Partner With Us?</h2>
     <div class="grid">
-        <div class="box">Education Agents & Consultants</div>
-        <div class="box">University & College Student Representatives</div>
-        <div class="box">Schools & Academic Institutions</div>
-        <div class="box">Parents & Independent Referrers</div>
+        <div class="card">Education Agents & Consultants</div>
+        <div class="card">Universities & College Representatives</div>
+        <div class="card">Schools & Academic Institutions</div>
+        <div class="card">Parents & Independent Referrers</div>
     </div>
 </section>
 
@@ -215,28 +231,28 @@ footer {
 <section id="how">
     <h2 class="section-title">How the Partnership Works</h2>
     <ol>
-        <li>Partner refers student to Counsell Abroad</li>
-        <li>Professional counselling & application handling</li>
-        <li>Student secures international admission</li>
-        <li>Partner receives commission after enrollment</li>
+        <li>Partner submits student referral</li>
+        <li>Professional counselling & admission handling</li>
+        <li>Student secures international placement</li>
+        <li>Commission released after enrollment</li>
     </ol>
 </section>
 
 <!-- TESTIMONIALS -->
 <section class="section-soft">
-    <h2 class="section-title">What Our Partners Say</h2>
+    <h2 class="section-title">Trusted by Our Partners</h2>
     <div class="grid">
-        <div class="box testimonial">
-            “Counsell Abroad handled everything professionally. Communication was clear and commission was paid on time.”
-            <span>– Education Agent, Lahore</span>
+        <div class="card testimonial">
+            “Counsell Abroad maintains high professional standards and transparent communication.”
+            <span>– Education Agent, Pakistan</span>
         </div>
-        <div class="box testimonial">
-            “A reliable team for study abroad admissions. Very transparent process.”
-            <span>– College Representative</span>
+        <div class="card testimonial">
+            “A reliable partner for long-term student referrals.”
+            <span>– Academic Institution Representative</span>
         </div>
-        <div class="box testimonial">
-            “Good support and ethical counselling. Easy to work with.”
-            <span>– Independent Referrer</span>
+        <div class="card testimonial">
+            “Ethical counselling and timely commission settlement.”
+            <span>– Independent Partner</span>
         </div>
     </div>
 </section>
