@@ -6,10 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-/* ===== RESET & BASE ===== */
-* {
-    box-sizing: border-box;
-}
+/* ===== BASE ===== */
+* { box-sizing: border-box; }
 body {
     margin: 0;
     font-family: "Inter", "Segoe UI", Arial, sans-serif;
@@ -17,15 +15,31 @@ body {
     background: #ffffff;
     line-height: 1.6;
 }
-h1, h2 {
-    margin: 0 0 15px;
-    font-weight: 600;
+a { text-decoration: none; color: inherit; }
+h1, h2, h3 { margin: 0 0 15px; font-weight: 600; }
+
+/* ===== HEADER ===== */
+header {
+    background: #071a2c;
+    color: #ffffff;
+    padding: 15px 30px;
 }
-p {
-    margin: 0 0 15px;
+.nav {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-a {
-    text-decoration: none;
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+.nav a {
+    margin-left: 25px;
+    font-size: 14px;
+    color: #dbe4ee;
 }
 
 /* ===== HERO ===== */
@@ -46,7 +60,6 @@ a {
     font-size: 18px;
     max-width: 720px;
     margin: 20px auto 35px;
-    opacity: 0.95;
 }
 
 /* ===== BUTTONS ===== */
@@ -81,7 +94,7 @@ section {
     margin-bottom: 25px;
 }
 
-/* ===== GRID ===== */
+/* ===== GRID / BOX ===== */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -94,9 +107,16 @@ section {
     border: 1px solid #e5e9f0;
 }
 
-/* ===== LISTS ===== */
-ul, ol {
-    padding-left: 18px;
+/* ===== TESTIMONIALS ===== */
+.testimonial {
+    font-style: italic;
+}
+.testimonial span {
+    display: block;
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 600;
+    color: #0b3c5d;
 }
 
 /* ===== FORM ===== */
@@ -109,7 +129,6 @@ input, select {
     margin-bottom: 16px;
     border: 1px solid #ccd3dd;
     border-radius: 4px;
-    font-size: 15px;
 }
 button {
     width: 100%;
@@ -147,41 +166,53 @@ footer {
 
 <body>
 
+<!-- HEADER -->
+<header>
+    <div class="nav">
+        <div class="logo">Counsell Abroad</div>
+        <div>
+            <a href="#about">About</a>
+            <a href="#partners">Partners</a>
+            <a href="#how">How It Works</a>
+            <a href="#form">Register</a>
+        </div>
+    </div>
+</header>
+
 <!-- HERO -->
 <div class="hero">
     <h1>Referral Partner Program for Study Abroad Admissions</h1>
     <p>
-        Counsell Abroad partners with agents, institutions, and individuals
-        to convert student leads into successful international admissions —
-        with fair commission and transparent processes.
+        Partner with Counsell Abroad to convert student leads into successful
+        international admissions — with transparent commission and professional handling.
     </p>
     <a href="#form" class="btn btn-primary">Become a Referral Partner</a>
     <a href="https://wa.me/923XXXXXXXXX" class="btn btn-outline">WhatsApp Us</a>
 </div>
 
 <!-- ABOUT -->
-<section>
+<section id="about">
     <h2 class="section-title">About Counsell Abroad</h2>
     <p>
         Counsell Abroad is a Lahore-based student counselling company providing
-        professional guidance for international education. We work with trusted
-        global institutions and operate on ethical, result-driven standards.
+        ethical and professional guidance for international education. We work
+        closely with trusted global institutions and value long-term partnerships.
     </p>
 </section>
 
 <!-- WHO -->
-<section class="section-soft">
+<section id="partners" class="section-soft">
     <h2 class="section-title">Who Can Partner With Us?</h2>
     <div class="grid">
         <div class="box">Education Agents & Consultants</div>
-        <div class="box">Universities & College Student Representatives</div>
-        <div class="box">Schools, Teachers & Academic Institutions</div>
-        <div class="box">Parents & Independent Student Referrers</div>
+        <div class="box">University & College Student Representatives</div>
+        <div class="box">Schools & Academic Institutions</div>
+        <div class="box">Parents & Independent Referrers</div>
     </div>
 </section>
 
 <!-- HOW -->
-<section>
+<section id="how">
     <h2 class="section-title">How the Partnership Works</h2>
     <ol>
         <li>Partner refers student to Counsell Abroad</li>
@@ -191,15 +222,23 @@ footer {
     </ol>
 </section>
 
-<!-- WHY -->
+<!-- TESTIMONIALS -->
 <section class="section-soft">
-    <h2 class="section-title">Why Partner With Counsell Abroad?</h2>
-    <ul>
-        <li>Established operations in Lahore, Pakistan</li>
-        <li>Clear and transparent commission structure</li>
-        <li>No processing or documentation workload</li>
-        <li>Long-term B2B collaboration opportunities</li>
-    </ul>
+    <h2 class="section-title">What Our Partners Say</h2>
+    <div class="grid">
+        <div class="box testimonial">
+            “Counsell Abroad handled everything professionally. Communication was clear and commission was paid on time.”
+            <span>– Education Agent, Lahore</span>
+        </div>
+        <div class="box testimonial">
+            “A reliable team for study abroad admissions. Very transparent process.”
+            <span>– College Representative</span>
+        </div>
+        <div class="box testimonial">
+            “Good support and ethical counselling. Easy to work with.”
+            <span>– Independent Referrer</span>
+        </div>
+    </div>
 </section>
 
 <!-- FORM -->
