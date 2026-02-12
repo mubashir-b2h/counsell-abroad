@@ -228,3 +228,41 @@ a.glass-back.btn-glow:hover {
     grid-template-columns: 1fr;
   }
 }
+
+.hero-small {
+    background: #f3f6f9;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero-small h1 {
+    font-size: 38px;
+    color: #0b3c5d;
+}
+
+.hero-small p {
+    max-width: 650px;
+    margin: 20px auto 0;
+    font-size: 18px;
+    color: #4b5563;
+}
+
+.content-section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 80px 25px;
+}
+
+.content-section h2 {
+    margin-top: 40px;
+    font-size: 26px;
+    color: #0b3c5d;
+}
+
+.cta-box {
+    margin-top: 50px;
+    padding: 40px;
+    background: #f9fafb;
+    border-radius: 10px;
+    text-align: center;
+}
