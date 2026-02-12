@@ -162,5 +162,24 @@
 </div>  
 </footer>
 
+ <script>
+document.getElementById("leadForm").addEventListener("submit", function(e){
+e.preventDefault();
+
+let name = document.getElementById("name").value;
+let phone = document.getElementById("phone").value;
+let country = document.getElementById("country").value;
+let course = document.getElementById("course").value;
+
+let message = `New Student Lead:%0A
+Name: ${name}%0A
+Phone: ${phone}%0A
+Country: ${country}%0A
+Course: ${course}`;
+
+window.open(`https://wa.me/923000000000?text=${message}`, "_blank");
+});
+</script> 
+
 </body>
 </html>
