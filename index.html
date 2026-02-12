@@ -6,8 +6,9 @@
 <title>Counsell Abroad | Study Abroad Consultants</title>
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-<!-- Facebook Pixel Code -->
+<!-- Facebook Pixel -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -20,14 +21,13 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 fbq('init', 'YOUR_PIXEL_ID');
 fbq('track', 'PageView');
 </script>
-  
 </head>
 <body>
 
 <!-- TOP CONTACT BAR -->
 <div class="top-bar">
 <div class="container top-flex">
-<div>📍 Office: Abbas Trade Center, B-4 Office, PIA Road, Lahore, Pakistan</div>
+<div>📍 Abbas Trade Center, B-4 Office, PIA Road, Lahore, Pakistan</div>
 <div>📞 +92 322-4596463</div>
 <div>💬 WhatsApp: +92 322-4596463</div>
 </div>
@@ -37,7 +37,7 @@ fbq('track', 'PageView');
 <header class="main-header">
 <div class="container header-flex">
 <div class="logo-area">
-<img src="logo (2).png" alt="Counsell Abroad Logo" class="logo-img">
+<img src="logo.png" alt="Counsell Abroad Logo" class="logo-img">
 <h1 class="brand-name">Counsell Abroad</h1>
 </div>
 <nav>
@@ -73,6 +73,9 @@ fbq('track', 'PageView');
 </section>
 
 <!-- LEAD FORM -->
+<section class="lead-section">
+<div class="container">
+<h2 class="section-title">Start Your Study Abroad Journey</h2>
 <form class="lead-form" id="leadForm">
 <input type="text" id="name" placeholder="Full Name" required>
 <input type="tel" id="phone" placeholder="WhatsApp Number" required>
@@ -86,7 +89,6 @@ fbq('track', 'PageView');
 <input type="text" id="course" placeholder="Preferred Course">
 <button type="submit" class="btn-primary">Check My Eligibility</button>
 </form>
-  
 </div>
 </section>
 
@@ -127,17 +129,15 @@ fbq('track', 'PageView');
 </div>
 </section>
 
+<!-- BOOKING -->
 <section class="section">
 <div class="container">
 <h2 class="section-title">Book Appointment</h2>
-
 <div class="calendly-inline-widget"
 data-url="https://calendly.com/YOUR-LINK"
 style="min-width:320px;height:600px;">
 </div>
-
 <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
-
 </div>
 </section>
 
@@ -173,54 +173,48 @@ style="min-width:320px;height:600px;">
 </div>
 </section>
 
-<!-- FLOATING BUTTONS -->
-<a href="https://wa.me/+923224596463" class="whatsapp-float" target="_blank">WhatsApp</a>
-<a href="https://wa.me/+923364729175" class="live-chat" target="_blank">💬 Live Chat</a>
-
- <section class="section alt-bg">
+<!-- GOOGLE REVIEWS -->
+<section class="section alt-bg">
 <div class="container">
 <h2 class="section-title">Google Reviews</h2>
-
 <div class="review-slider">
 <div class="review">★★★★★ Excellent visa guidance and support!</div>
 <div class="review">★★★★★ Highly recommended consultancy.</div>
 <div class="review">★★★★★ Smooth UK admission process.</div>
 </div>
 </div>
-</section> 
+</section>
 
 <!-- FOOTER -->
 <footer class="main-footer">
 <div class="container">
 <p>© 2026 Counsell Abroad | Global Education Partner</p>
-</div>
 
 <div class="social-links">
-<a href="#" target="https://www.facebook.com/counsellAbroad/">Facebook</a>
-<a href="#" target="https://www.instagram.com/counsellabroad/>Instagram</a>
-<a href="#" target="https://www.tiktok.com/@counsellabroad>TikTok</a>
-<a href="#" target="https://pk.linkedin.com/company/counsellabroad">LinkedIn</a>
-</div>  
+<a href="https://www.facebook.com/counsellAbroad/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+<a href="https://www.instagram.com/counsellabroad/" target="_blank"><i class="fab fa-instagram"></i></a>
+<a href="https://www.tiktok.com/@counsellabroad" target="_blank"><i class="fab fa-tiktok"></i></a>
+<a href="https://pk.linkedin.com/company/counsellabroad" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+</div>
+</div>
 </footer>
 
- <script>
+<!-- FLOATING BUTTONS -->
+<a href="https://wa.me/+923224596463" class="whatsapp-float" target="_blank">WhatsApp</a>
+<a href="https://wa.me/+923364729175" class="live-chat" target="_blank">💬 Live Chat</a>
+
+<!-- LEAD FORM JS -->
+<script>
 document.getElementById("leadForm").addEventListener("submit", function(e){
 e.preventDefault();
-
 let name = document.getElementById("name").value;
 let phone = document.getElementById("phone").value;
 let country = document.getElementById("country").value;
 let course = document.getElementById("course").value;
-
-let message = `New Student Lead:%0A
-Name: ${name}%0A
-Phone: ${phone}%0A
-Country: ${country}%0A
-Course: ${course}`;
-
-window.open(`https://wa.me/923000000000?text=${message}`, "_blank");
+let message = `New Student Lead:%0AName: ${name}%0APhone: ${phone}%0ACountry: ${country}%0ACourse: ${course}`;
+window.open(`https://wa.me/923224596463?text=${message}`, "_blank");
 });
-</script> 
+</script>
 
 </body>
 </html>
