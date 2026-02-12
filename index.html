@@ -135,10 +135,10 @@
 <section id="contact" class="section alt-bg">
 <div class="container">
 <h2 class="section-title">Book Free Consultation</h2>
-<form class="contact-form">
-<input type="text" placeholder="Full Name" required>
-<input type="email" placeholder="Email Address" required>
-<textarea placeholder="Tell us about your study plan"></textarea>
+<form class="contact-form" action="sendmail.php" method="POST">
+<input type="text" name="name" placeholder="Full Name" required>
+<input type="email" name="email" placeholder="Email Address" required>
+<textarea name="message" placeholder="Your Study Plan"></textarea>
 <button type="submit" class="btn-primary">Submit</button>
 </form>
 </div>
