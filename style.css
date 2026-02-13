@@ -61,9 +61,15 @@ rgba(15,15,20,0.8),
 rgba(43,0,54,0.7)
 );
 }
-.hero-content{position:relative; z-index:2; max-width:800px;margin:auto;}
-.hero-content h2{font-size:52px;margin-bottom:20px;}
-.hero-content p{font-size:20px;margin-bottom:30px;}
+.hero-content h2{
+color:#d4af37;
+font-size:56px;
+letter-spacing:1px;
+}
+
+.hero-content p{
+color:#f5f5f5;
+}
 .hero-buttons{display:flex;justify-content:center;gap:20px;}
 .hero-badges{margin-top:30px;display:flex;justify-content:center;gap:20px;flex-wrap:wrap;font-weight:600;}
 /* BUTTONS */
