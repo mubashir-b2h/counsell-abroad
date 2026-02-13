@@ -7,29 +7,15 @@
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-<!-- Facebook Pixel -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', 'YOUR_PIXEL_ID');
-fbq('track', 'PageView');
-</script>
 </head>
 <body>
 
 <!-- TOP CONTACT BAR -->
 <div class="top-bar">
   <div class="container top-flex">
-    <div><i class="fas fa-map-marker-alt"></i> Abbas Trade Center, B-4 Office, PIA Road, Lahore, Pakistan</div>
-    <div><i class="fas fa-phone"></i> +92 322-4596463</div>
-    <div><i class="fab fa-whatsapp"></i> WhatsApp: +92 322-4596463</div>
+    <div>📍 Abbas Trade Center, B-4 Office, PIA Road, Lahore, Pakistan</div>
+    <div>📞 +92 322-4596463</div>
+    <div>💬 WhatsApp: <i class="fab fa-whatsapp"></i> +92 322-4596463</div>
   </div>
 </div>
 
@@ -37,7 +23,7 @@ fbq('track', 'PageView');
 <header class="main-header">
   <div class="container header-flex">
     <div class="logo-area">
-      <img src="logo (2).png" alt="Counsell Abroad Logo" class="logo-img">
+      <img src="logo.png" alt="Counsell Abroad Logo" class="logo-img">
       <h1 class="brand-name">Counsell Abroad</h1>
     </div>
     <nav>
@@ -53,14 +39,13 @@ fbq('track', 'PageView');
 </header>
 
 <!-- HERO -->
-<section id="home" class="hero">
-  <div class="hero-overlay"></div>
+<section id="home" class="hero" style="background-image: url('your-hero-bg.jpg');">
   <div class="container hero-content">
     <h2>Your Global Education Partner</h2>
     <p>UK • Canada • Australia • USA Admissions with Full Visa Support</p>
     <div class="hero-buttons">
       <a href="#contact" class="btn-primary">Get Free Assessment</a>
-      <a href="https://wa.me/+923224596463" class="btn-outline"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+      <a href="https://wa.me/+923224596463" class="btn-outline">Chat on WhatsApp</a>
       <a href="b2b.html" class="btn-b2b">B2B Partnership</a>
     </div>
     <div class="hero-badges">
@@ -96,10 +81,18 @@ fbq('track', 'PageView');
   <div class="container">
     <h2 class="section-title">Our Services</h2>
     <div class="grid-4">
-      <div class="card" style="background-image: url('admission.jpg');"><span>University Admission Processing</span></div>
-      <div class="card" style="background-image: url('scholarship.jpg');"><span>Scholarship Assistance</span></div>
-      <div class="card" style="background-image: url('visa.jpg');"><span>Student Visa Filing</span></div>
-      <div class="card" style="background-image: url('ielts.jpg');"><span>IELTS & Interview Preparation</span></div>
+      <div class="card service-card" style="background-image: url('admission.jpg');">
+        <span>University Admission Processing</span>
+      </div>
+      <div class="card service-card" style="background-image: url('scholarship.jpg');">
+        <span>Scholarship Assistance</span>
+      </div>
+      <div class="card service-card" style="background-image: url('visa.jpg');">
+        <span>Student Visa Filing</span>
+      </div>
+      <div class="card service-card" style="background-image: url('ielts.jpg');">
+        <span>IELTS & Interview Preparation</span>
+      </div>
     </div>
   </div>
 </section>
@@ -109,10 +102,10 @@ fbq('track', 'PageView');
   <div class="container">
     <h2 class="section-title">Popular Study Destinations</h2>
     <div class="grid-4">
-      <div class="card" style="background-image: url('uk.jpg');"><span>United Kingdom</span></div>
-      <div class="card" style="background-image: url('canada.jpg');"><span>Canada</span></div>
-      <div class="card" style="background-image: url('australia.jpg');"><span>Australia</span></div>
-      <div class="card" style="background-image: url('usa.jpg');"><span>United States</span></div>
+      <div class="card destination-card" style="background-image: url('uk.jpg');"><span>United Kingdom</span></div>
+      <div class="card destination-card" style="background-image: url('canada.jpg');"><span>Canada</span></div>
+      <div class="card destination-card" style="background-image: url('australia.jpg');"><span>Australia</span></div>
+      <div class="card destination-card" style="background-image: url('usa.jpg');"><span>United States</span></div>
     </div>
   </div>
 </section>
@@ -125,18 +118,18 @@ fbq('track', 'PageView');
       <div class="testimonial-card">
         <img src="student1.jpg" alt="Student 1">
         <p>"Counsell Abroad helped me secure UK visa smoothly!"</p>
-        <h4>- Muhammad</h4>
+        <h4>- Muhammad </h4>
       </div>
       <div class="testimonial-card">
         <img src="student2.jpg" alt="Student 2">
         <p>"Best consultancy in Lahore. Highly professional."</p>
-        <h4>- Fatima</h4>
+        <h4>- Fatima </h4>
       </div>
     </div>
   </div>
 </section>
 
-<!-- OFFICE GALLERY -->
+<!-- OUR OFFICE -->
 <section class="section alt-bg">
   <div class="container">
     <h2 class="section-title">Our Office</h2>
@@ -144,18 +137,6 @@ fbq('track', 'PageView');
       <img src="office1.jpg" alt="Office Image">
       <img src="office2.jpg" alt="Office Image">
     </div>
-  </div>
-</section>
-
-<!-- BOOK APPOINTMENT -->
-<section class="section">
-  <div class="container">
-    <h2 class="section-title">Book Appointment</h2>
-    <div class="calendly-inline-widget"
-      data-url="https://calendly.com/counsellabroad"
-      style="min-width:320px;height:600px;">
-    </div>
-    <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
   </div>
 </section>
 
@@ -233,16 +214,16 @@ fbq('track', 'PageView');
   <div class="container">
     <p>© 2026 Counsell Abroad | Global Education Partner</p>
     <div class="social-links">
-      <a href="https://www.facebook.com/counsellAbroad/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://www.instagram.com/counsellabroad/" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.tiktok.com/@counsellabroad" target="_blank"><i class="fab fa-tiktok"></i></a>
-      <a href="https://pk.linkedin.com/company/counsellabroad" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
     </div>
   </div>
 </footer>
 
 <!-- FLOATING BUTTONS -->
-<a href="https://wa.me/+923224596463" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+<a href="https://wa.me/+923224596463" class="whatsapp-float" target="_blank">WhatsApp</a>
 <a href="https://wa.me/+923364729175" class="live-chat" target="_blank">💬 Live Chat</a>
 <a href="#contact" class="apply-sticky">Apply Now</a>
 
@@ -261,7 +242,7 @@ document.getElementById("leadForm").addEventListener("submit", function(e){
 
 <!-- CARD SCROLL ANIMATION -->
 <script>
-const elements = document.querySelectorAll('.card, .team-card, .trust-box, .testimonial-card');
+const elements = document.querySelectorAll('.card, .team-card, .trust-box');
 window.addEventListener('scroll', () => {
   elements.forEach(el => {
     const position = el.getBoundingClientRect().top;
