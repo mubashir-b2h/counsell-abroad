@@ -310,29 +310,22 @@ background: rgba(75,0,130,0.25);
   margin-top: 40px;
 }
 
-<h2 class="section-title">Commission Structure</h2>
+.commission-table table{
+width:100%;
+border-collapse: collapse;
+margin-bottom:40px;
+}
 
-<div class="commission-table">
-<table>
-<tr>
-<th>Country</th>
-<th>Commission Per Student</th>
-</tr>
-<tr>
-<td>UK</td>
-<td>Up to 30%</td>
-</tr>
-<tr>
-<td>Canada</td>
-<td>Up to 25%</td>
-</tr>
-<tr>
-<td>Australia</td>
-<td>Up to 30%</td>
-</tr>
-<tr>
-<td>USA</td>
-<td>Based on University</td>
-</tr>
-</table>
-</div>
+.commission-table th,
+.commission-table td{
+border:1px solid #333;
+padding:15px;
+text-align:center;
+background:#111;
+color:gold;
+}
+
+.commission-table th{
+background:#4b0082;
+color:#fff;
+}
