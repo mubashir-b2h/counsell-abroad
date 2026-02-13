@@ -438,3 +438,9 @@ transition:0.3s;
 .apply-sticky:hover{
 box-shadow:0 0 30px rgba(255,215,0,0.8);
 }
+
+.card, .team-card, .trust-box{
+opacity:0;
+transform:translateY(40px);
+transition:0.6s ease;
+}
