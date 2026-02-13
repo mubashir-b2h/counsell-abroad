@@ -283,12 +283,24 @@ body{
 
 .testimonial-card {
   width: 300px;
-  background: #fff;
+  background: #ffffff;
   padding: 20px;
   border-radius: 15px;
   text-align: center;
   box-shadow: 0 0 30px rgba(0,0,0,0.08);
   transition: 0.4s;
+  color: #222;   /* ADD THIS */
+}
+
+.testimonial-card p {
+  color: #333;   /* Dark paragraph */
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.testimonial-card h4 {
+  color: #007bff;   /* Name color */
+  font-weight: 600;
 }
 
 .testimonial-card img {
