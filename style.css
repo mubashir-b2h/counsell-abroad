@@ -355,3 +355,22 @@ box-shadow:0 0 40px rgba(255,215,0,0.6);
 font-size:40px;
 font-weight:700;
 }
+
+.trust-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.trust-box{
+background:#111;
+color:gold;
+padding:30px;
+border-radius:20px;
+transition:0.4s;
+}
+
+.trust-box:hover{
+box-shadow:0 0 40px rgba(255,215,0,0.6);
+transform:translateY(-8px);
+}
