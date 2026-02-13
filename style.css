@@ -587,26 +587,26 @@ body{
 /* ===== B2B PAGE ====== */
 /* ===================== */
 
-/* B2B HERO */
 .b2b-hero {
   height: 70vh;
-  background: linear-gradient(135deg, #1c1c2e, #2a2a40);
+  background: linear-gradient(135deg, #d8c3ff, #e6e6e6);
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #fff;
+  color: #2c2c2c;
 }
 
 .b2b-hero-content h2 {
   font-size: 42px;
   margin-bottom: 15px;
+  color: #4b0082;   /* Deep purple heading */
 }
 
 .b2b-hero-content p {
   font-size: 18px;
   margin-bottom: 25px;
-  color: #ddd;
+  color: #555;
 }
 
 .b2b-cta-btn {
