@@ -707,3 +707,47 @@ body{
   background: #0056b3;
   box-shadow: 0 0 20px rgba(0,123,255,0.5);
 }
+
+/* B2B Commission Title Fix */
+.b2b-page .section-title,
+.commission-title {
+  text-align: center;
+  color: #4b0082;
+  margin-bottom: 30px;
+}
+
+.commission-table th {
+  background: #4b0082;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+.commission-table td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  color: #333;   /* DARK TEXT */
+}
+
+.commission-table table {
+  color: #333;   /* Force dark text */
+}
+
+.commission-table th {
+  background: #4b0082;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+.commission-table td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  color: #333;   /* DARK TEXT */
+}
+
+.commission-table table {
+  color: #333;   /* Force dark text */
+}
