@@ -582,3 +582,128 @@ body{
   font-size: 14px;
   color: #666;   /* Soft gray */
 }
+
+/* ===================== */
+/* ===== B2B PAGE ====== */
+/* ===================== */
+
+/* B2B HERO */
+.b2b-hero {
+  height: 70vh;
+  background: linear-gradient(135deg, #1c1c2e, #2a2a40);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.b2b-hero-content h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.b2b-hero-content p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: #ddd;
+}
+
+.b2b-cta-btn {
+  background: #28a745;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.b2b-cta-btn:hover {
+  background: #1e7e34;
+  transform: translateY(-4px);
+  box-shadow: 0 0 25px rgba(40,167,69,0.6);
+}
+
+/* LIST STYLE */
+.b2b-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 40px;
+}
+
+.b2b-list li {
+  padding: 10px 0;
+  font-size: 16px;
+  border-bottom: 1px solid #eee;
+}
+
+/* COMMISSION TABLE */
+.commission-table {
+  width: 90%;
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.commission-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0,0,0,0.08);
+}
+
+.commission-table th {
+  background: #007bff;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+.commission-table td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.commission-table tr:hover {
+  background: #f8f8f8;
+}
+
+/* B2B FORM */
+#b2bForm {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0,0,0,0.08);
+  max-width: 700px;
+  margin: auto;
+}
+
+#b2bForm input,
+#b2bForm select,
+#b2bForm textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+#b2bForm button {
+  background: #007bff;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#b2bForm button:hover {
+  background: #0056b3;
+  box-shadow: 0 0 20px rgba(0,123,255,0.5);
+}
