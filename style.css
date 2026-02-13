@@ -295,6 +295,26 @@ body{
 }
 
 /* ==========================
+   OFFICE GALLERY
+========================== */
+.gallery-grid{
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  flex-wrap:wrap;
+}
+.gallery-grid img{
+  width:300px;
+  border-radius:20px;
+  box-shadow:0 0 30px rgba(106,13,173,0.4);
+  transition:0.4s;
+}
+.gallery-grid img:hover{
+  transform:scale(1.08);
+  box-shadow:0 0 60px rgba(106,13,173,0.8);
+}
+
+/* ==========================
    CONTACT FORM
 ========================== */
 .contact-form{
@@ -315,6 +335,29 @@ body{
 }
 .contact-form button{
   width:auto;
+}
+
+/* ==========================
+   WHY CHOOSE COUNSELL
+========================== */
+.trust-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+.trust-box{
+  background:#111;
+  color:gold;
+  padding:25px;
+  border-radius:20px;
+  transition:0.4s;
+  text-align:center;
+  opacity:0;
+  transform:translateY(20px);
+}
+.trust-box:hover{
+  box-shadow:0 0 40px rgba(255,215,0,0.6);
+  transform:translateY(-8px);
 }
 
 /* ==========================
@@ -385,6 +428,38 @@ body{
   gap:5px;
   z-index:999;
 }
+.live-chat{
+  position:fixed;
+  bottom:20px;
+  left:20px;
+  background:#6a0dad;
+  color:#fff;
+  padding:14px 20px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:600;
+  display:flex;
+  align-items:center;
+  gap:5px;
+  z-index:999;
+}
+.apply-sticky{
+  position:fixed;
+  right:20px;
+  top:50%;
+  background:gold;
+  color:#111;
+  padding:15px 20px;
+  border-radius:40px;
+  font-weight:700;
+  text-decoration:none;
+  transform:translateY(-50%);
+  z-index:999;
+  transition:0.3s;
+}
+.apply-sticky:hover{
+  box-shadow:0 0 30px rgba(255,215,0,0.8);
+}
 
 /* ==========================
    RESPONSIVE
@@ -396,271 +471,4 @@ body{
   .nav-links{justify-content:center;}
   .top-flex{flex-direction:column; text-align:center;}
   .gallery-grid img{width:90%;}
-}
-
-/* GENERAL RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
-body {
-  background-color: #fff;
-  color: #333;
-  line-height: 1.6;
-  scroll-behavior: smooth;
-}
-
-/* CONTAINERS */
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* HERO */
-.hero {
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  text-align: center;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-
-.hero-content h2 {
-  font-size: 48px;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-.hero-content p {
-  font-size: 20px;
-  margin-bottom: 25px;
-}
-
-.hero-buttons a {
-  display: inline-block;
-  margin: 5px;
-  padding: 12px 25px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.btn-primary {
-  background: #007bff;
-  color: #fff;
-}
-
-.btn-primary:hover {
-  background: #0056b3;
-}
-
-.btn-outline {
-  border: 2px solid #fff;
-  color: #fff;
-}
-
-.btn-outline:hover {
-  background: #fff;
-  color: #007bff;
-}
-
-.btn-b2b {
-  background: #28a745;
-  color: #fff;
-}
-
-.btn-b2b:hover {
-  background: #1e7e34;
-}
-
-.hero-badges {
-  margin-top: 25px;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.hero-badges span {
-  background: rgba(0,0,0,0.5);
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 14px;
-}
-
-/* SECTIONS */
-.section {
-  padding: 60px 0;
-}
-
-.alt-bg {
-  background: #f8f8f8;
-}
-
-/* SECTION TITLES */
-.section-title {
-  text-align: center;
-  font-size: 32px;
-  margin-bottom: 40px;
-  position: relative;
-}
-
-.section-title::after {
-  content: '';
-  width: 80px;
-  height: 3px;
-  background: #007bff;
-  display: block;
-  margin: 10px auto 0;
-  border-radius: 2px;
-}
-
-/* GRID 4 */
-.grid-4 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-}
-
-/* CARDS */
-.card {
-  background-size: cover;
-  background-position: center;
-  height: 250px;
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  color: #fff;
-  padding: 15px;
-  border-radius: 10px;
-  transition: 0.4s;
-  opacity: 0;
-  transform: translateY(50px);
-  overflow: hidden;
-}
-
-.card span {
-  background: rgba(0,0,0,0.5);
-  padding: 6px 12px;
-  border-radius: 5px;
-}
-
-.card:hover {
-  transform: translateY(-5px) scale(1.03);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-}
-
-/* TEAM GRID */
-.team-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
-  justify-content: center;
-}
-
-.team-card {
-  width: 220px;
-  text-align: center;
-  padding: 15px;
-  border-radius: 10px;
-  background: #fff;
-  transition: 0.3s;
-  opacity: 0;
-  transform: translateY(50px);
-}
-
-.team-card img {
-  width: 100%;
-  border-radius: 50%;
-  transition: 0.3s;
-}
-
-.team-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
-.team-card:hover img {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(0,123,255,0.6);
-}
-
-/* TRUST BOXES */
-.trust-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-}
-
-.trust-box {
-  padding: 25px;
-  background: #fff;
-  text-align: center;
-  border-radius: 10px;
-  transition: 0.3s;
-  opacity: 0;
-  transform: translateY(50px);
-}
-
-.trust-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
-/* GALLERY */
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
-}
-
-.gallery-grid img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-  transition: 0.3s;
-}
-
-.gallery-grid img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
-/* REVIEWS */
-.review-slider {
-  display: flex;
-  overflow-x: auto;
-  gap: 20px;
-  scroll-behavior: smooth;
-}
-
-/* LEAD FORM */
-.lead-form input, .lead-form select, .lead-form button {
-  display: block;
-  width: 100%;
-  margin-bottom: 15px;
-  padding: 12px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 16px;
-}
-
-.lead-form button {
-  background: #007bff;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-
-.lead-form button:hover {
-  background: #0056b3;
 }
