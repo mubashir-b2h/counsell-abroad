@@ -374,3 +374,33 @@ transition:0.4s;
 box-shadow:0 0 40px rgba(255,215,0,0.6);
 transform:translateY(-8px);
 }
+
+.testimonial-grid{
+display:flex;
+gap:30px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.testimonial-card{
+background:#111;
+color:gold;
+padding:25px;
+border-radius:20px;
+width:300px;
+text-align:center;
+transition:0.4s;
+}
+
+.testimonial-card img{
+width:80px;
+height:80px;
+border-radius:50%;
+object-fit:cover;
+border:3px solid gold;
+margin-bottom:15px;
+}
+
+.testimonial-card:hover{
+box-shadow:0 0 40px rgba(255,215,0,0.6);
+}
