@@ -100,5 +100,26 @@
 </div>
 </footer>
 
+ <script>
+document.getElementById("b2bForm").addEventListener("submit", function(e){
+e.preventDefault();
+
+let name = document.getElementById("partnerName").value;
+let phone = document.getElementById("partnerPhone").value;
+let email = document.getElementById("partnerEmail").value;
+let type = document.getElementById("partnerType").value;
+let message = document.getElementById("partnerMessage").value;
+
+let text = `New B2B Partner Application:%0A
+Name: ${name}%0A
+Phone: ${phone}%0A
+Email: ${email}%0A
+Partner Type: ${type}%0A
+Details: ${message}`;
+
+window.open(`https://wa.me/923224596463?text=${text}`, "_blank");
+});
+</script> 
+
 </body>
 </html>
