@@ -404,3 +404,22 @@ margin-bottom:15px;
 .testimonial-card:hover{
 box-shadow:0 0 40px rgba(255,215,0,0.6);
 }
+
+.apply-sticky{
+position:fixed;
+right:20px;
+top:50%;
+background:gold;
+color:#111;
+padding:15px 20px;
+border-radius:40px;
+font-weight:700;
+text-decoration:none;
+transform:translateY(-50%);
+z-index:999;
+transition:0.3s;
+}
+
+.apply-sticky:hover{
+box-shadow:0 0 30px rgba(255,215,0,0.8);
+}
