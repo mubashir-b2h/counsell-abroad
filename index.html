@@ -287,5 +287,21 @@ window.open(`https://wa.me/923224596463?text=${message}`, "_blank");
 
 <a href="#contact" class="apply-sticky">Apply Now</a>  
 
+<script>
+const elements = document.querySelectorAll('.card, .team-card, .trust-box');
+
+window.addEventListener('scroll', () => {
+elements.forEach(el => {
+const position = el.getBoundingClientRect().top;
+const screenPosition = window.innerHeight / 1.2;
+
+if(position < screenPosition){
+el.style.opacity = "1";
+el.style.transform = "translateY(0)";
+}
+});
+});
+</script>  
+
 </body>
 </html>
