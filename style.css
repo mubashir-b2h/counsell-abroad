@@ -560,3 +560,25 @@ body{
   transform: scale(1.08);
   box-shadow: 0 0 25px rgba(128,0,255,0.8);
 }
+
+.team-card {
+  width: 220px;
+  text-align: center;
+  background: #ffffff;
+  padding: 25px 20px;
+  border-radius: 20px;
+  transition: 0.4s;
+  box-shadow: 0 0 25px rgba(128,0,255,0.15);
+  color: #222;   /* ADD THIS */
+}
+
+.team-card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #111;   /* Dark heading */
+}
+
+.team-card p {
+  font-size: 14px;
+  color: #666;   /* Soft gray */
+}
