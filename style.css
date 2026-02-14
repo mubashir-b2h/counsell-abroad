@@ -618,3 +618,25 @@ body{
     color: #ffd700; /* content golden */
     font-weight: 700;
 }
+
+/* ==========================
+   OUR SERVICES SECTION
+========================== */
+.grid-4 .service-card,
+.grid-4 .destination-card {
+    background-size: cover;
+    background-position: center;
+    box-shadow: none;      /* Remove glow shadow */
+}
+
+.grid-4 .service-card::before,
+.grid-4 .destination-card::before {
+    background: rgba(0,0,0,0); /* Remove the dark overlay */
+}
+
+.grid-4 .card span {
+    color: #ffd700; /* Bright golden text */
+    font-weight: 700;
+    z-index: 2;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6); /* optional subtle shadow for contrast */
+}
