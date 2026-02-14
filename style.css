@@ -815,59 +815,46 @@ body{
   resize: none;
 }
 
-/* ================= B2B INFO BOX GRID ================= */
+/* ================= LUXURY EXECUTIVE BOX GRID ================= */
 
 .b2b-box-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-  margin-top: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
 }
 
-/* Individual Box */
+/* Executive Card */
 
 .b2b-info-box {
-  background: #ffffff;
-  padding: 40px 25px;
-  border-radius: 20px;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(12px);
+  padding: 50px 35px;
+  border-radius: 24px;
   text-align: center;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-  transition: all 0.4s ease;
+  border: 1px solid rgba(201,162,39,0.25);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.08);
+  transition: all 0.5s ease;
   position: relative;
-  overflow: hidden;
 }
-
-/* Gold top line */
-
-.b2b-info-box::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 4px;
-  width: 100%;
-  background: linear-gradient(90deg, #c9a227, #f5d76e);
-}
-
-/* Heading */
 
 .b2b-info-box h3 {
-  font-size: 20px;
-  margin-bottom: 15px;
+  font-size: 22px;
+  margin-bottom: 20px;
   font-weight: 600;
+  letter-spacing: 0.5px;
 }
-
-/* Paragraph */
 
 .b2b-info-box p {
-  font-size: 15.5px;
-  line-height: 1.8;
-  color: #555;
+  font-size: 16px;
+  line-height: 1.9;
+  color: #444;
 }
 
-/* Hover Effect */
+/* Elegant hover */
 
 .b2b-info-box:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 45px rgba(0,0,0,0.15);
+  transform: translateY(-12px);
+  box-shadow: 0 35px 80px rgba(0,0,0,0.12);
+  border-color: rgba(201,162,39,0.6);
 }
