@@ -5,181 +5,244 @@
 <title>Study in the UK | Counsell Abroad</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="subpage.css">
+
 <style>
-/* --- Hero --- */
+
+/* ================= HEADER ================= */
+.sub-header {
+  position: sticky;
+  top: 0;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 8%;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  z-index: 1000;
+}
+
+.sub-header h2 {
+  color: #4b0082;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.back-home {
+  padding: 8px 20px;
+  background: linear-gradient(45deg,#d4af37,#ffbf00);
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #111;
+  transition: 0.3s;
+}
+
+.back-home:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(255,191,0,0.5);
+}
+
+/* ================= HERO ================= */
 .hero-small {
-  height: 50vh;
+  height: 55vh;
+  background: linear-gradient(rgba(75,0,130,0.7), rgba(0,0,0,0.6)), 
+              url('uk-hero.jpg') center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #fff;
   text-align: center;
-  background: linear-gradient(rgba(75,0,130,0.6), rgba(0,0,0,0.4)), url('uk-hero.jpg') no-repeat center center/cover;
+  color: #fff;
+  padding: 0 20px;
 }
-.hero-small h1 { font-size: 42px; margin-bottom: 15px; text-shadow: 2px 2px 8px rgba(0,0,0,0.7); }
-.hero-small p { font-size: 18px; text-shadow: 1px 1px 6px rgba(0,0,0,0.6); }
 
-/* --- Content --- */
-.content-section { max-width: 1000px; margin: auto; padding: 60px 25px; }
-.content-section h2 { font-size: 30px; color: #4b0082; margin-bottom: 25px; text-align: center; }
-.content-section p, .content-section ul { font-size: 16px; line-height: 1.8; margin-bottom: 20px; }
+.hero-small h1 {
+  font-size: 44px;
+  margin-bottom: 15px;
+}
 
-/* --- University Cards --- */
+.hero-small p {
+  font-size: 18px;
+  max-width: 700px;
+}
+
+/* ================= SECTIONS ================= */
+.content-section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 70px 8%;
+}
+
+.content-section h2 {
+  font-size: 32px;
+  color: #4b0082;
+  margin-bottom: 25px;
+}
+
+.section-light {
+  background: #f8f8fc;
+  padding: 60px 8%;
+}
+
+/* ================= CARDS ================= */
 .university-card {
   background: #fff;
-  border-radius: 15px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+  border-radius: 18px;
+  padding: 30px;
   margin-bottom: 30px;
-  padding: 25px 30px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: 0.4s;
 }
+
 .university-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 35px rgba(0,0,0,0.2);
+  box-shadow: 0 15px 40px rgba(75,0,130,0.25);
 }
-.university-card h3 { color: #0b3c5d; margin-bottom: 12px; }
-.university-card p { color: #333; margin-bottom: 8px; }
+
+.university-card h3 {
+  color: #0b3c5d;
+  margin-bottom: 15px;
+}
+
 .badge {
   display: inline-block;
-  padding: 6px 12px;
-  margin-top: 8px;
-  margin-right: 5px;
+  padding: 6px 14px;
   border-radius: 50px;
-  background: linear-gradient(45deg,#d4af37,#ffbf00);
+  background: #4b0082;
   color: #fff;
   font-size: 12px;
-  font-weight: 600;
+  margin-right: 6px;
+  margin-top: 10px;
 }
 
-/* --- Lists --- */
-.content-section ul { list-style: disc; padding-left: 20px; }
-.content-section ul li { margin-bottom: 8px; }
-
-/* --- CTA Box --- */
+/* ================= CTA ================= */
 .cta-box {
   background: linear-gradient(135deg,#4b0082,#a020f0);
   color: #fff;
   text-align: center;
-  padding: 30px 20px;
-  border-radius: 15px;
-  margin-top: 40px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  padding: 50px 20px;
+  border-radius: 20px;
+  margin-top: 50px;
 }
+
 .cta-box a {
   display: inline-block;
-  margin-top: 15px;
-  padding: 12px 30px;
+  margin-top: 20px;
+  padding: 14px 35px;
   background: #ffd700;
-  color: #111;
   border-radius: 50px;
+  color: #111;
   font-weight: 600;
   text-decoration: none;
   transition: 0.3s;
 }
+
 .cta-box a:hover {
-  background: #ffbf00;
   transform: translateY(-3px);
-  box-shadow: 0 0 20px rgba(255,191,0,0.6);
+  box-shadow: 0 0 25px rgba(255,215,0,0.6);
 }
 
-/* --- Responsive --- */
-@media(max-width:768px) {
-  .hero-small h1 { font-size: 32px; }
-  .hero-small p { font-size: 16px; }
+/* ================= FOOTER ================= */
+.sub-footer {
+  text-align: center;
+  padding: 30px;
+  background: #111;
+  color: #fff;
+  margin-top: 60px;
 }
+
+.sub-footer a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 20px;
+  background: #ffd700;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #111;
+  font-weight: 600;
+}
+
 </style>
 </head>
 <body>
 
+<!-- HEADER -->
+<div class="sub-header">
+  <h2>Counsell Abroad</h2>
+  <a href="index.html" class="back-home">Back Home</a>
+</div>
+
 <!-- HERO -->
 <section class="hero-small">
-    <h1>Study in the United Kingdom</h1>
-    <p>Top universities, world-class courses, and career opportunities for Pakistani students.</p>
+  <h1>Study in the United Kingdom</h1>
+  <p>Build your global career with world-class British education and international exposure.</p>
 </section>
 
-<!-- CONTENT -->
+<!-- WHY UK -->
 <section class="content-section">
-    <h2>Why Study in the UK?</h2>
-    <p>
-        The UK offers internationally recognised degrees, shorter course durations, and strong post-study work opportunities.
-        Students gain global exposure, access to world-class faculty, and research-oriented programs.
-    </p>
-
-    <h2>Top Universities</h2>
-
-    <div class="university-card">
-        <h3>University of Oxford</h3>
-        <p><strong>Courses:</strong> Engineering, Business, Law, Medicine, Computer Science</p>
-        <p><strong>Intakes:</strong> October</p>
-        <p><strong>Tuition Fees:</strong> £22,000 - £30,000/year</p>
-        <p><strong>Scholarships:</strong> Up to £10,000 for international students</p>
-        <p><strong>Requirements:</strong> Strong academics, IELTS 7.0+, SOP</p>
-        <span class="badge">High Ranking</span>
-        <span class="badge">Research Focused</span>
-    </div>
-
-    <div class="university-card">
-        <h3>University of Cambridge</h3>
-        <p><strong>Courses:</strong> Engineering, Arts, Business, Computer Science, Medicine</p>
-        <p><strong>Intakes:</strong> October</p>
-        <p><strong>Tuition Fees:</strong> £21,000 - £29,000/year</p>
-        <p><strong>Scholarships:</strong> Up to £12,000</p>
-        <p><strong>Requirements:</strong> Academics, IELTS 7.5+, Personal Statement</p>
-        <span class="badge">Prestigious</span>
-        <span class="badge">Scholarships</span>
-    </div>
-
-    <div class="university-card">
-        <h3>Imperial College London</h3>
-        <p><strong>Courses:</strong> Engineering, Medicine, Business, Computing</p>
-        <p><strong>Intakes:</strong> September</p>
-        <p><strong>Tuition Fees:</strong> £20,000 - £28,000/year</p>
-        <p><strong>Scholarships:</strong> Up to £8,000</p>
-        <p><strong>Requirements:</strong> IELTS 6.5+, Academics, Some Interviews</p>
-        <span class="badge">STEM Focused</span>
-        <span class="badge">Global Career</span>
-    </div>
-
-    <h2>Popular Courses for Pakistani Students</h2>
-    <ul>
-        <li>Business & Management</li>
-        <li>Engineering</li>
-        <li>Computer Science & IT</li>
-        <li>Health Sciences & Medicine</li>
-        <li>Law & Humanities</li>
-    </ul>
-
-    <h2>How Counsell Abroad Helps</h2>
-    <ul>
-        <li>Guidance on university selection and eligibility</li>
-        <li>Admission & documentation support</li>
-        <li>Scholarship application assistance</li>
-        <li>Visa support and interview preparation</li>
-        <li>Exclusive package: Save USD 1200 on fees</li>
-        <li>Career guidance and post-study support</li>
-    </ul>
-
-    <h2>Admission Requirements</h2>
-    <ul>
-        <li>Academic transcripts and certificates</li>
-        <li>IELTS or PTE scores (6.5 - 7.5)</li>
-        <li>Statement of Purpose / Personal Statement</li>
-        <li>Letters of Recommendation</li>
-        <li>Proof of funds</li>
-    </ul>
-
-    <h2>Intakes & Fees Summary</h2>
-    <p>
-        Most universities have September / October intakes. Tuition fees range £18,000 - £30,000/year.
-        With scholarships and our exclusive Counsell Abroad package, students save up to USD 1200.
-    </p>
-
-    <div class="cta-box">
-        <h3>Get Expert UK Counselling</h3>
-        <a href="index.html#contact">Book Free Consultation</a>
-    </div>
+  <h2>Why Choose the UK?</h2>
+  <p>
+    The UK is one of the most preferred destinations for Pakistani students due to
+    1-year Master’s programs, strong global rankings, post-study work visa (PSW),
+    and excellent job opportunities.
+  </p>
 </section>
+
+<!-- UNIVERSITIES -->
+<section class="section-light">
+  <div class="content-section">
+    <h2>Top UK Universities</h2>
+
+    <div class="university-card">
+      <h3>University of Oxford</h3>
+      <p><strong>Fees:</strong> £22,000 – £30,000/year</p>
+      <p><strong>Intake:</strong> October</p>
+      <p><strong>Scholarship:</strong> Up to £10,000</p>
+      <p><strong>IELTS:</strong> 7.0+</p>
+      <span class="badge">World Ranked</span>
+      <span class="badge">Research Leader</span>
+    </div>
+
+    <div class="university-card">
+      <h3>University of Cambridge</h3>
+      <p><strong>Fees:</strong> £21,000 – £29,000/year</p>
+      <p><strong>Intake:</strong> October</p>
+      <p><strong>Scholarship:</strong> Up to £12,000</p>
+      <p><strong>IELTS:</strong> 7.5+</p>
+      <span class="badge">Prestigious</span>
+      <span class="badge">High Employability</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- COURSES -->
+<section class="content-section">
+  <h2>Popular Courses</h2>
+  <ul>
+    <li>Business & Management</li>
+    <li>Engineering</li>
+    <li>Computer Science</li>
+    <li>Health & Medicine</li>
+    <li>Law & Social Sciences</li>
+  </ul>
+</section>
+
+<!-- CTA -->
+<section class="content-section">
+  <div class="cta-box">
+    <h2>Save More With Counsell Abroad</h2>
+    <p>We offer complete admission & visa support and save you up to USD 1200 compared to other agents.</p>
+    <a href="index.html#contact">Book Free Consultation</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div class="sub-footer">
+  <p>© 2026 Counsell Abroad | All Rights Reserved</p>
+  <a href="index.html">Back Home</a>
+</div>
 
 </body>
 </html>
