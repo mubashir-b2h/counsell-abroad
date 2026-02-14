@@ -894,3 +894,28 @@ body{
 .luxury-benefit:hover {
   transform: translateX(8px);
 }
+
+/* ================= PARTNER TYPES ================= */
+
+.partner-types {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.partner-item {
+  background: #111;
+  color: #fff;
+  padding: 25px;
+  text-align: center;
+  border-radius: 40px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: 0.4s;
+}
+
+.partner-item:hover {
+  background: linear-gradient(45deg, #c9a227, #f5d76e);
+  color: #111;
+}
