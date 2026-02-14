@@ -581,3 +581,29 @@ body{
     transform:translateX(-50%);
   }
 }
+
+.destination-card {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-decoration: none; /* Remove underline */
+  color: gold; /* Keep the text color */
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.destination-card span {
+  position: relative;
+  z-index: 2;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.destination-card:hover::before {
+  background: rgba(0,0,0,0.2);
+  box-shadow: 0 0 30px 10px rgba(255,215,0,0.6);
+  transform: scale(1.05);
+}
