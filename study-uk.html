@@ -5,11 +5,95 @@
 <title>Study in the UK | Counsell Abroad</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="subpage.css">
+<style>
+/* --- Hero --- */
+.hero-small {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(rgba(75,0,130,0.6), rgba(0,0,0,0.4)), url('uk-hero.jpg') no-repeat center center/cover;
+}
+.hero-small h1 { font-size: 42px; margin-bottom: 15px; text-shadow: 2px 2px 8px rgba(0,0,0,0.7); }
+.hero-small p { font-size: 18px; text-shadow: 1px 1px 6px rgba(0,0,0,0.6); }
+
+/* --- Content --- */
+.content-section { max-width: 1000px; margin: auto; padding: 60px 25px; }
+.content-section h2 { font-size: 30px; color: #4b0082; margin-bottom: 25px; text-align: center; }
+.content-section p, .content-section ul { font-size: 16px; line-height: 1.8; margin-bottom: 20px; }
+
+/* --- University Cards --- */
+.university-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+  margin-bottom: 30px;
+  padding: 25px 30px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.university-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.2);
+}
+.university-card h3 { color: #0b3c5d; margin-bottom: 12px; }
+.university-card p { color: #333; margin-bottom: 8px; }
+.badge {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-top: 8px;
+  margin-right: 5px;
+  border-radius: 50px;
+  background: linear-gradient(45deg,#d4af37,#ffbf00);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* --- Lists --- */
+.content-section ul { list-style: disc; padding-left: 20px; }
+.content-section ul li { margin-bottom: 8px; }
+
+/* --- CTA Box --- */
+.cta-box {
+  background: linear-gradient(135deg,#4b0082,#a020f0);
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 15px;
+  margin-top: 40px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+.cta-box a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 30px;
+  background: #ffd700;
+  color: #111;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.cta-box a:hover {
+  background: #ffbf00;
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(255,191,0,0.6);
+}
+
+/* --- Responsive --- */
+@media(max-width:768px) {
+  .hero-small h1 { font-size: 32px; }
+  .hero-small p { font-size: 16px; }
+}
+</style>
 </head>
 <body>
 
 <!-- HERO -->
-<section class="hero-small" style="background-image: url('uk-hero.jpg');">
+<section class="hero-small">
     <h1>Study in the United Kingdom</h1>
     <p>Top universities, world-class courses, and career opportunities for Pakistani students.</p>
 </section>
@@ -19,40 +103,40 @@
     <h2>Why Study in the UK?</h2>
     <p>
         The UK offers internationally recognised degrees, shorter course durations, and strong post-study work opportunities.
-        Students can gain a global perspective while building their careers. Universities offer cutting-edge research facilities and highly qualified faculty.
+        Students gain global exposure, access to world-class faculty, and research-oriented programs.
     </p>
 
     <h2>Top Universities</h2>
 
     <div class="university-card">
         <h3>University of Oxford</h3>
-        <p>Courses: Engineering, Business, Law, Medicine, Computer Science</p>
-        <p>Intakes: October</p>
-        <p>Tuition Fees: £22,000 - £30,000/year</p>
-        <p>Scholarships: Up to £10,000 for international students</p>
-        <p>Requirements: Strong academics, IELTS 7.0+, Statement of Purpose</p>
+        <p><strong>Courses:</strong> Engineering, Business, Law, Medicine, Computer Science</p>
+        <p><strong>Intakes:</strong> October</p>
+        <p><strong>Tuition Fees:</strong> £22,000 - £30,000/year</p>
+        <p><strong>Scholarships:</strong> Up to £10,000 for international students</p>
+        <p><strong>Requirements:</strong> Strong academics, IELTS 7.0+, SOP</p>
         <span class="badge">High Ranking</span>
         <span class="badge">Research Focused</span>
     </div>
 
     <div class="university-card">
         <h3>University of Cambridge</h3>
-        <p>Courses: Engineering, Arts, Business, Computer Science, Medicine</p>
-        <p>Intakes: October</p>
-        <p>Tuition Fees: £21,000 - £29,000/year</p>
-        <p>Scholarships: Up to £12,000 for international students</p>
-        <p>Requirements: Strong academics, IELTS 7.5+, Personal Statement</p>
+        <p><strong>Courses:</strong> Engineering, Arts, Business, Computer Science, Medicine</p>
+        <p><strong>Intakes:</strong> October</p>
+        <p><strong>Tuition Fees:</strong> £21,000 - £29,000/year</p>
+        <p><strong>Scholarships:</strong> Up to £12,000</p>
+        <p><strong>Requirements:</strong> Academics, IELTS 7.5+, Personal Statement</p>
         <span class="badge">Prestigious</span>
-        <span class="badge">Scholarships Available</span>
+        <span class="badge">Scholarships</span>
     </div>
 
     <div class="university-card">
         <h3>Imperial College London</h3>
-        <p>Courses: Engineering, Medicine, Business, Computing</p>
-        <p>Intakes: September</p>
-        <p>Tuition Fees: £20,000 - £28,000/year</p>
-        <p>Scholarships: Up to £8,000 for international students</p>
-        <p>Requirements: IELTS 6.5+, Strong Academics, Interview (some courses)</p>
+        <p><strong>Courses:</strong> Engineering, Medicine, Business, Computing</p>
+        <p><strong>Intakes:</strong> September</p>
+        <p><strong>Tuition Fees:</strong> £20,000 - £28,000/year</p>
+        <p><strong>Scholarships:</strong> Up to £8,000</p>
+        <p><strong>Requirements:</strong> IELTS 6.5+, Academics, Some Interviews</p>
         <span class="badge">STEM Focused</span>
         <span class="badge">Global Career</span>
     </div>
@@ -69,31 +153,31 @@
     <h2>How Counsell Abroad Helps</h2>
     <ul>
         <li>Guidance on university selection and eligibility</li>
-        <li>Assistance in admission and documentation</li>
-        <li>Scholarship application support</li>
-        <li>Visa application support and interview preparation</li>
-        <li>Exclusive packages: Pay USD 1200 less than typical agent fees</li>
-        <li>Career guidance and post-study work support</li>
+        <li>Admission & documentation support</li>
+        <li>Scholarship application assistance</li>
+        <li>Visa support and interview preparation</li>
+        <li>Exclusive package: Save USD 1200 on fees</li>
+        <li>Career guidance and post-study support</li>
     </ul>
 
     <h2>Admission Requirements</h2>
     <ul>
         <li>Academic transcripts and certificates</li>
-        <li>IELTS or PTE scores (generally 6.5 - 7.5)</li>
-        <li>Statement of Purpose (SOP) / Personal Statement</li>
+        <li>IELTS or PTE scores (6.5 - 7.5)</li>
+        <li>Statement of Purpose / Personal Statement</li>
         <li>Letters of Recommendation</li>
-        <li>Financial documents for proof of funds</li>
+        <li>Proof of funds</li>
     </ul>
 
     <h2>Intakes & Fees Summary</h2>
     <p>
-        Most UK universities have **September / October intakes**. Tuition fees range from £18,000 - £30,000 per year.
-        With scholarships and our exclusive Counsell Abroad package, students can save up to **USD 1200** on their total program cost.
+        Most universities have September / October intakes. Tuition fees range £18,000 - £30,000/year.
+        With scholarships and our exclusive Counsell Abroad package, students save up to USD 1200.
     </p>
 
     <div class="cta-box">
         <h3>Get Expert UK Counselling</h3>
-        <a href="index.html#contact">Book Your Free Consultation</a>
+        <a href="index.html#contact">Book Free Consultation</a>
     </div>
 </section>
 
