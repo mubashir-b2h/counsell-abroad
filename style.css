@@ -519,3 +519,45 @@ body{
   box-shadow:0 0 70px rgba(75,0,130,0.8);
   transform:translateY(-10px);
 }
+
+<section class="reviews">
+    <h2>What Our Students Say</h2>
+
+    <div class="reviews-wrapper">
+        <div class="reviews-track">
+
+            <div class="review-card">
+                <p>"Amazing guidance and support!"</p>
+                <h4>- Rahul Sharma</h4>
+            </div>
+
+            <div class="review-card">
+                <p>"Got my UK visa smoothly."</p>
+                <h4>- Priya Patel</h4>
+            </div>
+
+            <div class="review-card">
+                <p>"Highly professional team."</p>
+                <h4>- Ahmed Khan</h4>
+            </div>
+
+            <!-- Duplicate same 3 again for smooth loop -->
+
+            <div class="review-card">
+                <p>"Amazing guidance and support!"</p>
+                <h4>- Rahul Sharma</h4>
+            </div>
+
+            <div class="review-card">
+                <p>"Got my UK visa smoothly."</p>
+                <h4>- Priya Patel</h4>
+            </div>
+
+            <div class="review-card">
+                <p>"Highly professional team."</p>
+                <h4>- Ahmed Khan</h4>
+            </div>
+
+        </div>
+    </div>
+</section>
