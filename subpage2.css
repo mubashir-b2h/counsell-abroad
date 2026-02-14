@@ -1,6 +1,8 @@
 /* ==========================
-   GENERAL RESET
+   B2B PAGE LUXURY EXECUTIVE STYLE
 ========================== */
+
+/* GENERAL RESET */
 * {
   margin: 0;
   padding: 0;
@@ -8,15 +10,13 @@
   font-family: 'Poppins', 'IBM Plex Sans', sans-serif;
 }
 body {
-  background: #0f0f14; /* can be lightened per section */
+  background: #0f0f14;
   color: #f5f5f5;
   line-height: 1.6;
   overflow-x: hidden;
 }
 
-/* ==========================
-   HEADER (KEEP ORIGINAL STRUCTURE)
-========================== */
+/* HEADER */
 .main-header {
   background: #151520;
   color: #f5f5f5;
@@ -29,42 +29,55 @@ body {
   z-index: 999;
   box-shadow: 0 2px 15px rgba(0,0,0,0.5);
 }
-.main-header .brand-name {
+.main-header h1.brand-name {
+  color: #ffd700;
   font-size: 22px;
   font-weight: 700;
-  color: #d4af37;
 }
-.main-header .nav-links li a, .main-header .nav-cta {
+.main-header nav .nav-links li a {
   color: #fff;
   text-decoration: none;
   font-weight: 600;
-  padding: 8px 15px;
-  border-radius: 40px;
+  margin-left: 20px;
   transition: 0.3s;
 }
-.main-header .nav-links li a:hover, .main-header .nav-cta:hover {
-  background: #6a0dad;
-  transform: translateY(-2px);
-  box-shadow: 0 0 15px rgba(106,13,173,0.5);
+.main-header nav .nav-links li a:hover {
+  color: #ffd700;
 }
 
-/* ==========================
-   HERO SECTION
-========================== */
+/* TOP BAR */
+.top-bar {
+  background: #151520;
+  color: #f5f5f5;
+  padding: 8px 25px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-bar div {
+  margin-right: 15px;
+}
+
+/* HERO PREMIUM */
 .b2b-hero-premium {
-  height: 70vh;
+  position: relative;
+  height: 80vh;
+  background-image: url('https://images.unsplash.com/photo-1531379410503-4aa2b7c62363?auto=format&fit=crop&w=1650&q=80');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  background-size: cover;
-  background-position: center;
   text-align: center;
+  overflow: hidden;
 }
-.b2b-hero-premium .b2b-overlay {
+.b2b-overlay {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.35);
+  background: rgba(0,0,0,0.45);
+  z-index: 1;
 }
 .b2b-hero-content-premium {
   position: relative;
@@ -74,67 +87,79 @@ body {
 }
 .b2b-hero-content-premium h1 {
   font-size: 48px;
+  margin-bottom: 20px;
   color: #ffd700;
   text-shadow: 2px 2px 15px rgba(0,0,0,0.7);
-  margin-bottom: 20px;
 }
 .b2b-hero-content-premium p {
   font-size: 22px;
+  margin-bottom: 30px;
   color: #fff;
   text-shadow: 1px 1px 10px rgba(0,0,0,0.6);
 }
-.b2b-hero-content-premium .hero-buttons a {
-  margin: 10px;
+.hero-buttons a {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.btn-primary {
+  background: #ffd700;
+  color: #000;
+}
+.btn-primary:hover {
+  background: #ffea00;
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px rgba(212,175,55,0.5);
+}
+.btn-outline {
+  background: transparent;
+  border: 2px solid #ffd700;
+  color: #ffd700;
+}
+.btn-outline:hover {
+  background: #ffd700;
+  color: #000;
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px rgba(212,175,55,0.5);
 }
 
-/* ==========================
-   SECTION CONTAINERS
-========================== */
-.section {
-  max-width: 1000px;
-  margin: 50px auto;
-  padding: 40px 25px;
-}
-.section.alt-bg {
-  background: rgba(20,20,30,0.85);
-  border-radius: 20px;
-}
-
-/* ==========================
-   INFO BOXES / DESCRIPTION
-========================== */
+/* INFO BOX GRID */
 .b2b-box-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
   gap: 25px;
   margin-top: 40px;
 }
 .b2b-info-box {
-  background: rgba(20,20,30,0.9);
-  padding: 25px;
+  background: rgba(30,30,45,0.9);
   border-radius: 20px;
-  box-shadow: 0 0 30px rgba(212,175,55,0.3);
+  padding: 30px 25px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(212,175,55,0.3);
   transition: transform 0.3s, box-shadow 0.3s;
-}
-.b2b-info-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 35px rgba(212,175,55,0.5);
 }
 .b2b-info-box h3 {
   color: #ffd700;
-  margin-bottom: 12px;
+  font-size: 22px;
+  margin-bottom: 15px;
 }
 .b2b-info-box p {
   color: #f5f5f5;
   font-size: 16px;
 }
+.b2b-info-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 35px rgba(212,175,55,0.5);
+}
 
-/* ==========================
-   SERVICES GRID
-========================== */
+/* SERVICES GRID */
 .grid-4 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
   gap: 20px;
   margin-top: 30px;
 }
@@ -145,6 +170,7 @@ body {
   overflow: hidden;
   background-size: cover;
   background-position: center;
+  cursor: pointer;
   transition: transform 0.3s;
 }
 .grid-4 .card span {
@@ -162,20 +188,36 @@ body {
   transform: scale(1.05);
 }
 
-/* ==========================
-   BENEFITS / PARTNER TYPES
-========================== */
+/* BENEFITS GRID */
 .luxury-benefit-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
   gap: 25px;
   margin-top: 30px;
 }
-.luxury-benefit h4 {
-  font-size: 20px;
-  color: #ffd700;
-  margin-bottom: 10px;
+.luxury-benefit {
+  background: rgba(30,30,45,0.9);
+  border-radius: 20px;
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(212,175,55,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
+.luxury-benefit h4 {
+  color: #ffd700;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.luxury-benefit p {
+  color: #f5f5f5;
+  font-size: 15px;
+}
+.luxury-benefit:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 35px rgba(212,175,55,0.5);
+}
+
+/* PARTNER TYPES */
 .partner-types {
   display: flex;
   flex-wrap: wrap;
@@ -190,6 +232,7 @@ body {
   border-radius: 50px;
   font-weight: 600;
   text-align: center;
+  cursor: default;
   transition: transform 0.3s, background 0.3s;
 }
 .partner-item:hover {
@@ -197,9 +240,7 @@ body {
   transform: translateY(-3px);
 }
 
-/* ==========================
-   CONTACT FORM
-========================== */
+/* CONTACT FORM */
 .contact-form input, .contact-form textarea {
   width: 100%;
   padding: 14px 12px;
@@ -228,9 +269,7 @@ body {
   box-shadow: 0 0 25px rgba(212,175,55,0.5);
 }
 
-/* ==========================
-   FOOTER
-========================== */
+/* FOOTER */
 .main-footer {
   background: #151520;
   color: #fff;
@@ -240,37 +279,38 @@ body {
   box-shadow: 0 -2px 15px rgba(0,0,0,0.5);
 }
 
-/* ==========================
-   FLOATING BUTTONS
-========================== */
+/* FLOATING BUTTONS */
 .whatsapp-float, .apply-sticky {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25d366;
-  color: #fff;
-  padding: 12px 18px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: 700;
-  z-index: 999;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-.apply-sticky {
-  right: 150px;
+  bottom: 25px;
+  right: 25px;
   background: #ffd700;
   color: #000;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 0 25px rgba(212,175,55,0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+  z-index: 9999;
+}
+.apply-sticky {
+  bottom: 80px;
 }
 .whatsapp-float:hover, .apply-sticky:hover {
   transform: translateY(-3px);
-  box-shadow: 0 0 20px rgba(212,175,55,0.5);
+  box-shadow: 0 0 35px rgba(212,175,55,0.6);
 }
 
-/* ==========================
-   RESPONSIVE
-========================== */
+/* RESPONSIVE */
 @media(max-width:768px){
-  .b2b-hero-content-premium h1 { font-size: 32px; }
-  .b2b-hero-content-premium p { font-size: 18px; }
-  .grid-4 .card, .b2b-box-grid .b2b-info-box, .luxury-benefit-grid .luxury-benefit { height: auto; }
+  .b2b-hero-content-premium h1 {
+    font-size: 32px;
+  }
+  .b2b-hero-content-premium p {
+    font-size: 18px;
+  }
+  .grid-4 .card, .b2b-box-grid .b2b-info-box, .luxury-benefit-grid .luxury-benefit {
+    height: auto;
+  }
 }
