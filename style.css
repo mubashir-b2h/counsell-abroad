@@ -814,3 +814,60 @@ body{
   height: 150px;
   resize: none;
 }
+
+/* ================= B2B INFO BOX GRID ================= */
+
+.b2b-box-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+/* Individual Box */
+
+.b2b-info-box {
+  background: #ffffff;
+  padding: 40px 25px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Gold top line */
+
+.b2b-info-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(90deg, #c9a227, #f5d76e);
+}
+
+/* Heading */
+
+.b2b-info-box h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Paragraph */
+
+.b2b-info-box p {
+  font-size: 15.5px;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Hover Effect */
+
+.b2b-info-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.15);
+}
