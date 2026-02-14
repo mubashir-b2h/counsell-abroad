@@ -1,3 +1,153 @@
+/* ================= GENERAL ================= */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f8f9fb;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* ================= HEADER ================= */
+.subpage-header {
+    background: #ffffff;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.subpage-header h1 {
+    font-size: 20px;
+    color: #111;
+}
+
+.back-home {
+    text-decoration: none;
+    padding: 8px 18px;
+    background: linear-gradient(45deg, #c9a227, #f5d76e);
+    color: #111;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.back-home:hover {
+    transform: scale(1.05);
+}
+
+/* ================= HERO ================= */
+.hero-small {
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-small::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.6));
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 18px;
+}
+
+/* ================= CONTENT SECTION ================= */
+.content-section {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.content-section h2 {
+    margin-top: 50px;
+    font-size: 28px;
+    color: #111;
+    position: relative;
+}
+
+.content-section h2::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: #c9a227;
+    display: block;
+    margin-top: 8px;
+}
+
+.content-section p {
+    margin-top: 15px;
+    color: #555;
+    font-size: 16px;
+}
+
+.content-section ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.content-section li {
+    margin-bottom: 8px;
+}
+
+/* ================= CTA BOX ================= */
+.cta-box {
+    margin-top: 70px;
+    padding: 40px;
+    background: linear-gradient(45deg, #111, #1a1a1a);
+    color: #fff;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.cta-box h3 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 30px;
+    background: linear-gradient(45deg, #c9a227, #f5d76e);
+    color: #111;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+}
+
+/* ================= FOOTER ================= */
+.subpage-footer {
+    background: #ffffff;
+    padding: 25px;
+    text-align: center;
+    margin-top: 80px;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+}
+
 /* ================= GENERAL RESET ================= */
 * {
   margin: 0; padding: 0;
