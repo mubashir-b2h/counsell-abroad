@@ -263,28 +263,43 @@ a {
   color: inherit;
 }
 
+/* ================= PARALLAX HERO ================= */
+
 .hero-small {
-  height: 60vh;
-  background-size: cover;
+  height: 70vh;
+  background-attachment: fixed;
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   text-align: center;
+  position: relative;
   color: #fff;
-  padding: 0 20px;
+}
+
+.hero-small::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.30);
+}
+
+.hero-small h1,
+.hero-small p {
+  position: relative;
+  z-index: 2;
 }
 
 .hero-small h1 {
-  font-size: 40px;
-  margin-bottom: 15px;
-  text-shadow: 1px 1px 10px rgba(0,0,0,0.6);
+  font-size: 48px;
+  margin-bottom: 20px;
 }
 
 .hero-small p {
-  font-size: 18px;
-  text-shadow: 1px 1px 8px rgba(0,0,0,0.5);
+  font-size: 20px;
+  max-width: 750px;
 }
 
 .content-section {
