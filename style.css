@@ -428,3 +428,28 @@ body{
   .nav-links{justify-content:center;}
   .top-flex{flex-direction:column; text-align:center;}
 }
+
+/* ==========================
+   OFFICE GALLERY FIX
+========================== */
+.gallery-grid{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:30px;
+  flex-wrap:wrap;   /* allows responsive but keeps horizontal */
+}
+
+.gallery-grid img{
+  width:280px;      /* fixed proper size */
+  height:200px;     /* equal height */
+  object-fit:cover; /* no stretching */
+  border-radius:18px;
+  transition:0.4s ease;
+  box-shadow:0 0 35px rgba(75,0,130,0.35);
+}
+
+.gallery-grid img:hover{
+  transform:scale(1.08);
+  box-shadow:0 0 60px rgba(75,0,130,0.7);
+}
