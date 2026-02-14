@@ -504,3 +504,18 @@ body{
   transform:scale(1.1);
   box-shadow:0 0 25px rgba(75,0,130,0.8);
 }
+
+.trust-box{
+  background:#fff;
+  color:#4b0082;
+  padding:25px;
+  border-radius:20px;
+  transition:0.4s;
+  text-align:center;
+  box-shadow:0 0 35px rgba(75,0,130,0.35);
+}
+
+.trust-box:hover{
+  box-shadow:0 0 70px rgba(75,0,130,0.8);
+  transform:translateY(-10px);
+}
