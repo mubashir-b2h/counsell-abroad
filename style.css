@@ -777,20 +777,24 @@ body{
   transition: 0.4s;
 }
 
-.card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.55);
-}
-
-.card span {
-  position: relative;
-  z-index: 2;
+.card {
+  height: 260px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 18px;
+  display: flex;
+  align-items: flex-end;
+  padding: 25px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  transition: 0.4s;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
 }
 
 .card:hover {
   transform: translateY(-8px);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.15);
 }
 
 /* ================= FORM POLISH ================= */
