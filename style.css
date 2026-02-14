@@ -249,10 +249,9 @@ body{
   font-size:18px;
   margin-bottom:15px;
 }
-.grid-4 .card:hover::before{
-  background: rgba(75,0,130,0.15);
-  box-shadow:0 0 30px 10px rgba(75,0,130,0.4);
-  transform:scale(1.05);
+.grid-4 .card:hover{
+  transform:translateY(-10px) scale(1.05);
+  box-shadow:0 0 70px rgba(75,0,130,0.75);
 }
 
 /* ==========================
