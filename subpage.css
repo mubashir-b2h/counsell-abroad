@@ -1,0 +1,146 @@
+/* ==========================
+   SUBPAGES COMMON STYLES
+========================== */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: #f9f9fa;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+h1, h2, h3 {
+    color: #4b0082;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    margin-top: 35px;
+}
+
+h3 {
+    font-size: 22px;
+    margin-top: 25px;
+}
+
+p, li {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 25px;
+}
+
+a {
+    color: #1d4ed8;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #9333ea;
+}
+
+/* CTA Box */
+.cta-box {
+    background: #e6e6fa;
+    padding: 25px 30px;
+    border-radius: 20px;
+    margin-top: 30px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(75,0,130,0.3);
+}
+
+.cta-box h3 {
+    color: #4b0082;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.cta-box .btn-primary {
+    background: #4b0082;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.cta-box .btn-primary:hover {
+    background: #6a0dad;
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(106,13,173,0.6);
+}
+
+/* Hero small */
+.hero-small {
+    background: linear-gradient(135deg, #d8c3ff, #e6e6e6);
+    text-align: center;
+    padding: 80px 20px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 30px rgba(75,0,130,0.3);
+}
+
+.hero-small h1 {
+    font-size: 36px;
+    color: #4b0082;
+    margin-bottom: 15px;
+}
+
+.hero-small p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #4b0082;
+    color: #fff;
+}
+
+tr:hover {
+    background: #f3f3f3;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .hero-small h1 {
+        font-size: 28px;
+    }
+    .hero-small p {
+        font-size: 16px;
+    }
+    .cta-box h3 {
+        font-size: 20px;
+    }
+}
