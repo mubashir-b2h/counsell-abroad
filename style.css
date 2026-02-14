@@ -582,50 +582,39 @@ body{
   }
 }
 
+/* ==========================
+   HERO SECTION
+========================== */
+.hero-content h2 {
+    color: #ffd700; /* Golden heading */
+    text-shadow: 2px 2px 12px rgba(0,0,0,0.6); /* keep subtle shadow for readability */
+}
+
+.hero-content p {
+    color: #ffd700; /* Golden paragraph below heading */
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.6); /* subtle shadow for contrast */
+}
+
+/* ==========================
+   OUR SERVICES SECTION
+========================== */
+.grid-4 .card {
+    box-shadow: 0 0 0 rgba(0,0,0,0); /* remove glowing effect */
+}
+
+.grid-4 .card span {
+    color: #ffd700; /* content in golden */
+    font-weight: 700;
+}
+
+/* ==========================
+   POPULAR STUDY DESTINATIONS
+========================== */
 .destination-card {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  text-decoration: none; /* Remove underline */
-  color: gold; /* Keep the text color */
-  position: relative;
-  border-radius: 20px;
-  overflow: hidden;
-  transition: all 0.4s ease;
+    box-shadow: 0 0 0 rgba(0,0,0,0); /* remove glow */
 }
 
 .destination-card span {
-  position: relative;
-  z-index: 2;
-  font-weight: 700;
-  font-size: 18px;
-  margin-bottom: 15px;
-}
-
-.destination-card:hover::before {
-  background: rgba(0,0,0,0.2);
-  box-shadow: 0 0 30px 10px rgba(255,215,0,0.6);
-  transform: scale(1.05);
-}
-
-img {
-  filter: brightness(1.05) contrast(1.05);
-}
-
-/* ===== GLOBAL IMAGE CLARITY IMPROVEMENT ===== */
-
-img {
-  filter: brightness(1.05) contrast(1.05) saturate(1.05);
-}
-
-.hero,
-.hero-small,
-.destination-card {
-  filter: none !important;
-}
-
-/* Remove dull overlays */
-.hero::before,
-.hero-small::before {
-  background: rgba(0,0,0,0.25) !important;
+    color: #ffd700; /* content golden */
+    font-weight: 700;
 }
