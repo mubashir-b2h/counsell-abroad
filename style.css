@@ -640,3 +640,44 @@ body{
     z-index: 2;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.6); /* optional subtle shadow for contrast */
 }
+
+/* ==========================
+   HERO PARALLAX
+========================== */
+.hero {
+  background-attachment: fixed; /* Parallax effect */
+  background-size: cover;
+  background-position: center;
+}
+
+/* ==========================
+   SERVICES & DESTINATIONS PARALLAX
+========================== */
+.service-card,
+.destination-card {
+  background-attachment: fixed; /* subtle parallax */
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.4s ease;
+}
+
+/* Optional subtle hover zoom for better effect */
+.service-card:hover,
+.destination-card:hover {
+  transform: scale(1.05);
+}
+
+/* ==========================
+   OFFICE IMAGES SIZE UPDATE
+========================== */
+.gallery-grid img {
+  width: 375px; /* increase approx 25% from 300px */
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(106,13,173,0.4);
+  transition: 0.4s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 60px rgba(106,13,173,0.8);
+}
