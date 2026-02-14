@@ -858,3 +858,39 @@ body{
   box-shadow: 0 35px 80px rgba(0,0,0,0.12);
   border-color: rgba(201,162,39,0.6);
 }
+
+/* ================= LUXURY BENEFITS ================= */
+
+.luxury-bg {
+  background: #f8f8f8;
+}
+
+.luxury-benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 35px;
+  margin-top: 60px;
+}
+
+.luxury-benefit {
+  padding: 35px;
+  border-left: 3px solid #c9a227;
+  background: #fff;
+  border-radius: 12px;
+  transition: 0.4s ease;
+}
+
+.luxury-benefit h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.luxury-benefit p {
+  font-size: 15.5px;
+  line-height: 1.8;
+  color: #555;
+}
+
+.luxury-benefit:hover {
+  transform: translateX(8px);
+}
