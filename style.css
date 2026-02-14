@@ -520,44 +520,64 @@ body{
   transform:translateY(-10px);
 }
 
-<section class="reviews">
-    <h2>What Our Students Say</h2>
+/* ==========================
+   GOOGLE REVIEWS SLIDER
+========================== */
 
-    <div class="reviews-wrapper">
-        <div class="reviews-track">
+.reviews{
+  padding:80px 20px;
+  background:linear-gradient(135deg,#f5f3ff,#e0d4ff);
+  text-align:center;
+  overflow:hidden;
+}
 
-            <div class="review-card">
-                <p>"Amazing guidance and support!"</p>
-                <h4>- Rahul Sharma</h4>
-            </div>
+.reviews h2{
+  color:#4b0082;
+  margin-bottom:40px;
+}
 
-            <div class="review-card">
-                <p>"Got my UK visa smoothly."</p>
-                <h4>- Priya Patel</h4>
-            </div>
+.reviews-wrapper{
+  overflow:hidden;
+  width:100%;
+}
 
-            <div class="review-card">
-                <p>"Highly professional team."</p>
-                <h4>- Ahmed Khan</h4>
-            </div>
+.reviews-track{
+  display:flex;
+  gap:30px;
+  animation:scrollReviews 25s linear infinite;
+}
 
-            <!-- Duplicate same 3 again for smooth loop -->
+.review-card{
+  min-width:300px;
+  background:#fff;
+  padding:25px;
+  border-radius:20px;
+  box-shadow:0 0 35px rgba(75,0,130,0.35);
+  transition:0.4s;
+}
 
-            <div class="review-card">
-                <p>"Amazing guidance and support!"</p>
-                <h4>- Rahul Sharma</h4>
-            </div>
+.review-card p{
+  color:#333;
+  font-size:15px;
+  margin-bottom:10px;
+}
 
-            <div class="review-card">
-                <p>"Got my UK visa smoothly."</p>
-                <h4>- Priya Patel</h4>
-            </div>
+.review-card h4{
+  color:#4b0082;
+  font-size:14px;
+}
 
-            <div class="review-card">
-                <p>"Highly professional team."</p>
-                <h4>- Ahmed Khan</h4>
-            </div>
+.review-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 0 60px rgba(75,0,130,0.7);
+}
 
-        </div>
-    </div>
-</section>
+/* Animation */
+@keyframes scrollReviews{
+  from{
+    transform:translateX(0);
+  }
+  to{
+    transform:translateX(-50%);
+  }
+}
